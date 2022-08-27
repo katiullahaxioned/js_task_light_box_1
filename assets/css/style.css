@@ -192,20 +192,15 @@ main .wrapper {
   background-color: rgba(0,0,0,0.8);
 }
 
-.modal.active { display: block; }
-
 .modal-content {
   width: 250px;
   height: 300px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 2;
-  pointer-events: none;
+  z-index: 3;
   transform: translate(-50%, -50%);
 }
-
-.modal-content .show { display: block;}
 
 .close-button {
   width: 30px;
@@ -222,9 +217,9 @@ main .wrapper {
   transition: all .3s;
 }
 
-.close-button.active { display: block; }
 .close-button:hover { opacity: 0.7; }
-.overflow { overflow: hidden; }
+.active-block { display: block; }
+.overflow-hidden { overflow: hidden; }
 
 /*=================================
   main styling ends here
